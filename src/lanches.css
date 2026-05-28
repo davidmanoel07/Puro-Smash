@@ -8,6 +8,7 @@ main {
   flex-direction: row;
   gap: 35px;
   flex-wrap: wrap;
+  justify-content: center; /* ADICIONADO: Centraliza os cards quando eles quebrarem linha em telas menores */
 }
 
 /* Opcional: Garante que o card controle bem o tamanho dos botões */
@@ -91,4 +92,26 @@ h2, p {
 .btn-sacola:hover {
   background-color: rgba(255, 255, 255, 0.1); /* Sutil brilho de fundo */
   border-color: #E74C3C;                       /* A borda assume a cor do hover principal */
+}
+
+/* --- ADICIONADO: MEDIA QUERY PARA RESPONSIVIDADE EM DISPOSITIVOS MÓVEIS --- */
+@media (max-width: 600px) {
+  main {
+    padding: 0 20px; /* Diminui a margem nas laterais para aproveitar melhor a tela do telemóvel */
+    margin-top: 30px;
+  }
+
+  h2 {
+    text-align: center; /* Centraliza os títulos "Nossos Sanduíches" e "Nossas Bebidas" */
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+
+  .bebidas {
+    margin-top: 3rem;
+  }
+
+  .cards-container {
+    gap: 25px; /* Diminui um pouco o espaço entre os cards para caberem melhor */
+  }
 }

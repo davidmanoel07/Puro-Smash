@@ -26,10 +26,15 @@ import GuaranaLata from './Imagens/Guarana-Antarctica-Lata.png'
 import PepsiLata from './Imagens/Pepsi-Lata.png'
 import SpriteLata from './Imagens/Sprite-Lata.png'
 
+
+import SucoLaranja from './Imagens/Suco-de-Laranja.png'
+import SucoAcerola from './Imagens/Suco-de-Acerola.png'
+import SucoGraviola from './Imagens/Suco-de-Graviola.png'
+
 // Novo ícone para a sacola
 import AdicionarSacola from './Imagens/adicionar-a-sacola.png'
 
-function Lanches(){
+function Lanches({ adicionarAoCarrinho, setPaginaAtual }){ // Recebendo as funções via props
 
   const sanduiches = [
     { id: 1,  nome: "Hamburguer Puro Smash", preco: "R$ 37,50", imagem: HamburguerPuroSmash },
@@ -46,7 +51,7 @@ function Lanches(){
     { id: 12, nome: "Sel Bacon",             preco: "R$ 38,00", imagem: SelBacon },
   ]
 
-  const bebidas = [
+ const bebidas = [
     { id: 1, nome: "Pepsi em Lata",          preco: "R$ 3,50", imagem: PepsiLata },
     { id: 2, nome: "Coca-Cola em Lata",       preco: "R$ 7,00", imagem: CocaLata },
     { id: 3, nome: "Coca-Cola Zero em Lata",  preco: "R$ 6,00", imagem: CocaZeroLata },
@@ -56,7 +61,17 @@ function Lanches(){
     { id: 7, nome: "Guaraná Antarctica",      preco: "R$ 3,50", imagem: GuaranaLata },
     { id: 8, nome: "Água Mineral 500ml",      preco: "R$ 3,00", imagem: AguaMineral },
     { id: 9, nome: "Água Com Gás 500ml",      preco: "R$ 3,50", imagem: AguaComGas },
+    // 3 Novos Sucos adicionados aqui:
+    { id: 10, nome: "Suco de Laranja (Garrafa)", preco: "R$ 8,00", imagem: SucoLaranja },
+    { id: 11, nome: "Suco de Acerola (Garrafa)", preco: "R$ 8,00", imagem: SucoAcerola },
+    { id: 12, nome: "Suco de Graviola (Garrafa)",         preco: "R$ 7,50", imagem: SucoGraviola },
   ]
+
+  // Função auxiliar para o botão "Comprar" (Adiciona e já abre a sacola)
+  const acaoComprar = (item) => {
+    adicionarAoCarrinho(item);
+    setPaginaAtual('sacola');
+  }
 
   return(
     <main>
@@ -69,8 +84,12 @@ function Lanches(){
             <p className="card-preco">{item.preco}</p>
             
             <div className="card-actions">
-              <button className="btn-comprar">Comprar</button>
-              <button className="btn-sacola" title="Adicionar à sacola">
+              <button className="btn-comprar" onClick={() => acaoComprar(item)}>Comprar</button>
+              <button 
+                className="btn-sacola" 
+                title="Adicionar à sacola"
+                onClick={() => adicionarAoCarrinho(item)}
+              >
                 <img src={AdicionarSacola} alt="Adicionar à sacola" />
               </button>
             </div>
@@ -87,8 +106,12 @@ function Lanches(){
             <p className="card-preco">{item.preco}</p>
             
             <div className="card-actions">
-              <button className="btn-comprar">Comprar</button>
-              <button className="btn-sacola" title="Adicionar à sacola">
+              <button className="btn-comprar" onClick={() => acaoComprar(item)}>Comprar</button>
+              <button 
+                className="btn-sacola" 
+                title="Adicionar à sacola"
+                onClick={() => adicionarAoCarrinho(item)}
+              >
                 <img src={AdicionarSacola} alt="Adicionar à sacola" />
               </button>
             </div>

@@ -71,3 +71,18 @@
   color: #cfcfcf;
   line-height: 1.6;
 }
+
+/* --- MEDIA QUERIES PARA O SOBRE --- */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px;    /* Diminui a margem interna nas laterais */
+  }
+
+  .about-hero h2 {
+    font-size: 32px;       /* Diminui o título principal (era 48px) */
+  }
+
+  .about-hero p {
+    font-size: 17px;       /* Ajusta o texto explicativo */
+  }
+}

@@ -42,8 +42,89 @@ nav a:hover {
   color: #E67E22;
 }
 
-.banner{
+.banner {
   width: 100%;
   height: 600px;
+  object-fit: cover; /* Garante o ajuste perfeito da imagem */
+}
 
+main {
+  margin-bottom: 3rem;
+}
+
+.nav-sacola {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-sacola {
+  background-color: #E67E22;
+  color: #FDF6EC;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1;
+}
+
+.toast-aviso {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2ECC71;
+  color: #FDF6EC;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  animation: subirAviso 0.3s ease-out;
+}
+
+@keyframes subirAviso {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   MEDIA QUERIES: RESPONSIVIDADE PARA TELAS MENORES (TABLETS E CELULARES)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  header {
+    height: auto;           /* Deixa a altura livre para o conteúdo */
+    flex-direction: column;  /* Empilha o título Puro Smash em cima e o menu embaixo */
+    padding: 15px 20px;
+    gap: 15px;              /* Espaço entre o título e os links */
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 20px;              /* Reduz o espaço dos links para caber na largura */
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    height: 250px;          /* Diminui a altura do banner para o celular não ficar gigante */
+  }
+  
+  .toast-aviso {
+    left: 20px;             /* No celular, centraliza o aviso fixado na tela inferior */
+    right: 20px;
+    text-align: center;
+  }
 }

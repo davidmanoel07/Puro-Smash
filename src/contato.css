@@ -69,3 +69,29 @@
 .btn-voltar:hover {
   background-color: #8a4b27;
 }
+
+/* --- MEDIA QUERIES PARA O CONTATO --- */
+@media (max-width: 600px) {
+  .contato-container {
+    padding: 20px;         /* Reduz o espaçamento externo do container */
+  }
+
+  .contato-content {
+    padding: 30px 20px;    /* Diminui o padding interno do card escuro */
+  }
+
+  .contato-content h2 {
+    font-size: 28px;       /* Diminui o tamanho do título "Entre em Contato" */
+  }
+
+  .contato-links {
+    flex-direction: column; /* Coloca os botões um embaixo do outro no celular */
+    gap: 15px;
+  }
+
+  .contato-btn, .btn-voltar {
+    display: block;
+    width: 100%;           /* Faz com que todos os botões ocupem a largura máxima */
+    text-align: center;
+  }
+}
