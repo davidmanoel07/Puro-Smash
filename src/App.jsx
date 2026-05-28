@@ -6,8 +6,8 @@ import { useState } from 'react'
 import Banner from './Imagens/Banner-do-site.png'
 
 import Lanches from './lanches'
-import About from './About'
-import Contato from './Contato'
+import About from "./about";   // 'about' com minúscula combinando com o arquivo
+import Contato from "./contato"; // 'contato' com minúscula combinando com o arquivo
 import Bag from './bag'
 
 function App() {
