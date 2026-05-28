@@ -1,4 +1,4 @@
-import './Contato.css'
+import './contato.css'
 
 function Contato({ voltarHome }) {
 
