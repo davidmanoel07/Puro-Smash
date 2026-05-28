@@ -1,16 +1,138 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🍔 Puro Smash
 
-Currently, two official plugins are available:
+Projeto de um **E-commerce de Hamburgueres e Bebidas** desenvolvido com **React**, oferecendo uma experiência moderna, prática e responsiva para os usuários realizarem pedidos online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O sistema possui catálogo de produtos, navegação entre páginas, sacola de compras e finalização de pedidos diretamente pelo WhatsApp.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🍔 Catálogo de hambúrgueres
+- 🥤 Catálogo de bebidas
+- 🛒 Adicionar produtos à sacola
+- 📱 Finalização de compra via WhatsApp
+- 📄 Página Sobre
+- 📞 Página de Contato
+- 🔄 Navegação entre páginas
+- 📱 Layout responsivo
+- ⚛️ Componentização com React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+<div style="display: inline_block"><br>
+  <img align="center" alt="React" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+  <img align="center" alt="JavaScript" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img align="center" alt="HTML5" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS3" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+</div>
+
+---
+
+## 📷 Preview do Projeto
+
+### 🖥️ Página Inicial
+
+<img src="./src/imagens/preview-home.png" alt="Preview Home" width="100%">
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+│
+├── components/
+├── pages/
+├── imagens/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+### 📥 Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+---
+
+### 📂 Entre na pasta do projeto
+
+```bash
+cd nome-do-projeto
+```
+
+---
+
+### 📦 Instale as dependências
+
+```bash
+npm install
+```
+
+---
+
+### ▶️ Execute o projeto
+
+```bash
+npm run dev
+```
+
+---
+
+## 📱 Finalização via WhatsApp
+
+O sistema permite que o usuário:
+
+- Escolha os produtos
+- Adicione à sacola
+- Finalize o pedido rapidamente pelo WhatsApp
+
+Tornando a experiência simples, rápida e prática.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido com foco em praticar e aprimorar conhecimentos em:
+
+- React
+- Componentização
+- Gerenciamento de estado
+- Responsividade
+- Navegação entre páginas
+- Desenvolvimento Front-End
+
+---
+
+## 💡 Melhorias Futuras
+
+- 🔐 Sistema de Login
+- 💳 Integração com pagamentos online
+- 🌙 Dark Mode
+- 🛒 Carrinho persistente
+- ⭐ Avaliações de produtos
+- 🔎 Sistema de busca e filtros
+- 📦 Histórico de pedidos
+
+---
+
+## 👨‍💻 Autor
+
+Feito por **David Oliveira** 🚀
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
