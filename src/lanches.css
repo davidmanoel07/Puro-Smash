@@ -1,0 +1,94 @@
+main {
+  margin-top: 60px;
+  padding: 0 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+/* Opcional: Garante que o card controle bem o tamanho dos botões */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Alinha com a largura da sua imagem */
+}
+
+.card-img {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+h2, p {
+  color: #fff;
+}
+
+.bebidas {
+  margin-top: 4rem;
+}
+
+/* --- CONFIGURAÇÃO DOS DOIS BOTÕES LADO A LADO --- */
+
+/* Container que segura os dois botões */
+.card-actions {
+  display: flex;
+  gap: 10px;           /* Espaço entre o botão Comprar e a Sacola */
+  width: 100%;
+  margin-top: 2rem;    /* Substitui o margin-top antigo do button original */
+  align-items: center;
+}
+
+/* Botão Comprar (Atualizado com a sua cor #C0392B) */
+.btn-comprar {
+  flex: 1;             /* Faz ele esticar e ocupar o espaço restante */
+  background-color: #C0392B;
+  color: #fff;
+  border: none;
+  padding: 10px 0;     /* Ajustado para focar no preenchimento vertical */
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #E74C3C; /* Sua cor de hover original */
+}
+
+/* Botão da Sacola (Estilo quadrado e vazado) */
+.btn-sacola {
+  width: 38px;         /* Proporcional aos 10px de padding vertical do Comprar */
+  height: 38px;        /* Mantém o botão perfeitamente quadrado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; 
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Borda branca suave */
+  border-radius: 6px;  /* Combinando com o seu border-radius de 6px */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+/* Controla o tamanho do ícone dentro do quadrado */
+.btn-sacola img {
+  width: 26px;         
+  height: 22px;
+  object-fit: contain;
+}
+
+/* Efeito Hover do botão da sacola */
+.btn-sacola:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Sutil brilho de fundo */
+  border-color: #E74C3C;                       /* A borda assume a cor do hover principal */
+}

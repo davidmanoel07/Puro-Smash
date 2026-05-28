@@ -1,0 +1,73 @@
+.about-container {
+  min-height: 100vh;
+  background-color: #0f0e17;
+  color: white;
+  padding: 60px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-hero h2 {
+  font-size: 48px;
+  color: #F1C40F;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #d6d6d6;
+}
+
+.btn-voltar {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c0392b;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background-color: #1a1925;
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+  border: 1px solid #2d2d3a;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  border-color: #F1C40F;
+}
+
+.about-card h3 {
+  color: #F1C40F;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.about-card p {
+  color: #cfcfcf;
+  line-height: 1.6;
+}
